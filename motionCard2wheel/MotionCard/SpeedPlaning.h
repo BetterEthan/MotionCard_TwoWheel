@@ -4,9 +4,9 @@
 
 
 
-void CalculateThreeWheelVell(float* wheelOne,float* wheelTwo,float* wheelThree);
+void CalculateThreeWheelVell(float* wheelOne, float* wheelTwo, float* wheelThree);
 void DynamicalAjusting(float* wheelOne, float* wheelTwo, float* wheelThree);
-float DecreseVellByOneWheel(float vellCar, float orientation, float rotationalVell,float zAngle, int wheelNum, float targetWheelVell);
+//float DecreseVellByOneWheel(float vellCar, float orientation, float rotationalVell, float zAngle, int wheelNum, float targetWheelVell);
 void SpeedPlaning(void);
 
 

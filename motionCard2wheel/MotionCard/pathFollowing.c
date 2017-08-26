@@ -18,8 +18,6 @@
 #include "Bspline.h"
 #include "posSystem.h"
 #include "MotionCard.h"
-#include "Move.h"
-
 
 extern int jishuuu;
 
@@ -31,13 +29,9 @@ extern int jishuuu;
 * @param	percent 速度的百分比，若为1代表100%所规划的速度运行。范围为大于0,如果超过1，会超过机器人承受速度
 * @retval	无
 **********************************************************************************/
-int PathFollowing(float percent,float vell) 
+int PathFollowing(float percent) 
 {
-//	static float vell = 200.0f;
-	float angle1 = 0.0f;
-	float angularVel = 0.0f;
-	float angleErr = 0.0f;
-	float posAngle = 0.0f;
+	float vell = 0.0f;
 	float robotlen = 0.0f;
 	static float disRealPos2VirTarget = 0.0f;
 	static float disRealPos2VirPos = 0.0f;
@@ -112,9 +106,9 @@ int PathFollowing(float percent,float vell)
 	
 //	angularVel = AngleControl(presentLine.direction,posAngle);
 	
-//	vell = GetRingBufferPointVell(1)+(GetRingBufferPointVell(2) - GetRingBufferPointVell(1))*virtualPos.u;
-//	
-//	vell = vell*percent;
+	vell = GetRingBufferPointVell(1)+(GetRingBufferPointVell(2) - GetRingBufferPointVell(1))*virtualPos.u;
+	
+	vell = vell*percent;
 
 //	float time;
 //	

@@ -50,6 +50,8 @@ float CalculateAngleSub(float minuend, float subtrahend)
 	return result;
 }
 
+
+
 /*********************************************************************************
 * @name 	CalculateTwoLineIntersection2
 * @brief	计算两条直线的交点

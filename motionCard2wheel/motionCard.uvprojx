@@ -414,6 +414,11 @@
               <FileType>1</FileType>
               <FilePath>.\MotionCard\calculate.c</FilePath>
             </File>
+            <File>
+              <FileName>SpeedPlaning.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MotionCard\SpeedPlaning.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

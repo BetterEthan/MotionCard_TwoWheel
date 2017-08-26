@@ -38,9 +38,9 @@ extern void TwoWheelWalk(float x,float y,float vel);
 
 
 //ACCMAX摩擦力和电机能提供的最大加速度 mm/s^2
-//extern float GetAccMax(void);
+extern float GetAccMax(void);
 ////VELLMAX机器人能达到的最大速度 mm/s  该值是通过比较摩擦力提供的最大加速度与电机能提供给机器人的最大加速度，取最小值。
-//extern float GetVelMax(void);
+extern float GetVelMax(void);
 
 
 
@@ -54,7 +54,7 @@ extern float GetPosy(void);
 int BufferZizeInit(int num);
 
 //路径跟随函数 percent: 范围为0~1.1代表规划的最大速度;返回 -1代表传入参数超出范围；返回1代表成功运行
-int PathFollowing(float percent,float vell);
+int PathFollowing(float percent) ;
 
 //示教采点函数，采点时，需要一直调用;返回1代表成功采集
 int PoseSampling(void);
